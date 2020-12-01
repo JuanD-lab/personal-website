@@ -1,0 +1,805 @@
+body {
+    font-family: 'Spartan', sans-serif;
+}
+
+
+.button-hover {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+  }
+  
+  .box {
+    border: 4px solid orange;
+    width: 198px;
+    height: 43px;
+    padding: 5px;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 198px;
+    height: 43px;
+    border: 4px solid black;
+    padding: 5px;
+    background-color: white;
+    transition: 0.2s ease-in-out;
+    margin-top: -20px;
+  }
+  
+  .button-hover:hover .box{
+    padding: 0px;
+  }
+
+  .button-hover:hover .child {
+      margin-top: -8px;
+  }
+
+
+.m-b {
+    margin-top: 3rem !important;
+}
+
+.m-t3 {
+    margin-top: 3rem;
+}
+
+.m-t10 {
+    margin-top: 10rem;
+}
+
+.m-tr {
+    margin-top: 5%;
+}
+
+/* Hacemos los ICONOS negros */
+
+i {
+    color: black !important;
+}
+
+/* Fuente responsiva para textos pequeños*/
+
+.responsive-text {
+    font-size: calc( .5vw + 1em) !important;
+}
+
+.responsive-text2 {
+    font-size: calc( .1vw + 1em) !important;
+}
+
+.responsive-tit {
+    font-size: calc( 2.5vw + 1em) !important;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.m-r5 {
+    margin-right: 8rem;
+}
+
+.bold {
+    font-weight: 700 !important;
+}
+
+/* Hacemos el contenedor en dispositvos grandes de 85% */
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 85% !important;
+    }
+}
+
+/* ------------------------------NAVEGADOR----------------------- */
+
+.nav-marg {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+nav ul a {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Cambiamos el color y el bold de el nav en mobile */
+
+.sidenav li>a {
+    color: black;
+    font-weight: 800;
+}
+
+/* ------------------------------NAVEGADOR----------------------- */
+
+/* ---------------------------BANNER------------------------ */
+
+/* Para el texto del banner */
+
+.texto-banner {
+    line-height: 1.3;
+}
+
+/* Hacer el span mas negro del banner */
+
+.banner span {
+    font-weight: 700;
+}
+
+/* Seleccionamos los estilos para los parrafos de banner */
+
+.banner p {
+    font-weight: 200;
+    font-family: 'Spartan', sans-serif;
+    font-size: 1.2rem !important;
+}
+
+/* Iconos de banner */
+
+i {
+    font-size: .5rem;
+}
+
+/* Le ponemos altura del 100# */
+
+.btn-small {
+    height: 100%;
+}
+
+/* Botones de banner */
+
+/* El boton blanco de banner */
+
+.btn-banner {
+    color: black !important;
+    background-color: white;
+    border: 2px solid black;
+}
+
+/* Seccion de skills en banner */
+
+.skills-banner p {
+    font-size: .9rem !important;
+    display: inline;
+    margin-left: 1rem;
+}
+
+/* De 0 a 700 */
+
+@media only screen and (max-width: 700px) {
+    .banner a {
+        padding: .1rem;
+        font-weight: 600;
+        font-size: .8rem !important;
+        display: block;
+        width: 80%;
+        margin: 1rem auto;
+    }
+    .banner img {
+        width: 300px;
+    }
+    .b {
+        width: 15px;
+        margin-right: -.19rem;
+    }
+    .itlost {
+        width: 50px;
+    }
+    nav i {
+        font-size: 20px;
+    }
+    .texto-banner {
+        margin-top: 1rem;
+    }
+}
+
+/* de 701 a 900 */
+
+@media only screen and (min-width: 701px) {
+    .banner img {
+        width: 300px;
+    }
+    .banner a {
+        padding: .3rem 1.5rem;
+        margin: 1rem 1rem 1rem 0;
+        font-weight: 600;
+    }
+}
+
+/* de 992 a infintiuo */
+
+@media only screen and (min-width: 992px) {
+    .banner img {
+        width: 500px;
+    }
+    .izquierda {
+        text-align: left !important;
+    }
+}
+
+/* ---------------------------------BANNNNNER END--------------------- */
+
+/* Equipo */
+
+.equipo-fuente {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.equipo-fuente span {
+    font-size: 13px !important;
+}
+
+.equipo h2 {
+    line-height: 1.6;
+}
+
+/* Hacemos que las imagene no puedan tener mas de 600px de ancho */
+
+.equipo img {
+    max-width: 600px;
+}
+
+/* Media para equipo en 992 o menos */
+
+@media only screen and (max-width:992px) {
+    .equipo img {
+        display: flex !important;
+        margin: 0 auto;
+    }
+    .card-title {
+        margin-left: 100px;
+    }
+    h2 {
+        font-weight: 700;
+    }
+}
+
+/* Media para equipo en 992 o mas */
+
+@media only screen and ( min-width:993px) {
+    .chico {
+        font-size: calc( 1.5vw + 1em) !important;
+        font-weight: 700;
+    }
+    .container-button {
+        margin-top: 5rem !important;
+    }
+}
+
+.equipo button {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.equipo span {
+    font-size: 20px;
+}
+
+/* Equipo */
+
+/* LISTA DE PRECIOS */
+
+.planes {
+    background-color: black;
+}
+
+@media only screen and (max-width:992px) {
+    .card-panel {
+        margin: 2rem auto;
+        text-align: center;
+    }
+}
+
+.card-panel {
+    margin-bottom: 5rem;
+}
+
+.planes h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: .5rem !important;
+}
+
+.precio {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 5px 5px .5px rgba(0, 0, 0, 0.356);
+}
+
+.badge {
+    float: none !important;
+    padding: .5em 1em !important;
+}
+
+.planes span {
+    background-color: #a6c !important;
+}
+
+.planes i {
+    margin-right: .7rem;
+}
+
+.modal-content h4 {
+    font-size: 50px;
+}
+
+.modal-content p {
+    font-size: 18px;
+    line-height: 2;
+}
+
+.modal-content span {
+    font-weight: 800 !important;
+    background-color: white !important;
+}
+
+.parrafos {
+    font-size: .9rem !important;
+    font-weight: 300;
+}
+
+.parrafos p {
+    margin-bottom: 1.3rem !important;
+}
+
+/* LISTA DE PRECIOS */
+
+/* UI */
+
+.diseño {
+    display: flex;
+}
+
+.cardPanels-nosotros {
+    width: 300px;
+    height: 400px;
+    /* margin: 0 auto; */
+}
+
+/* UI */
+
+/* Proyectos */
+
+.proyectos img {
+    opacity: 50%;
+}
+
+.proyectos img:hover {
+    opacity: 100% !important;
+}
+
+/* Proyectos */
+
+/* EMPEZAR   */
+
+.empezar {
+    height: 400px;
+}
+
+footer i {
+    font-size: 20px !important;
+}
+
+footer a {
+    margin-right: 20px !important;
+}
+
+.sidenav li {
+    margin-top: 5rem !important;
+}
+
+.mnegative {
+    margin-top: -4rem;
+}
+
+@media only screen and (max-width:560px) {
+    .mnegative {
+        margin-top: 0 !important;
+    }
+}
+
+/* BOTONES */
+
+.button.alternative {
+    --color-hover: #2b3044;
+    --background: #362a89;
+    --hover-back: #6d58ff;
+    --hover-front: #f6f8ff;
+}
+
+.button.simple {
+    --background: #275efe;
+    --background-hover: #1749db;
+}
+
+.button {
+    --color: #fff;
+    --color-hover: var(--color);
+    --background: #2b3044;
+    --background-hover: var(--background);
+    --hover-back: #6d58ff;
+    --hover-front: #5c86ff;
+    padding: 8px 28px;
+    border-radius: 20px;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    border: none;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    color: var(--c, var(--color));
+    background: var(--b, var(--background));
+    -webkit-transition: color 0.2s linear var(--c-d, 0.2s), background 0.3s linear var(--b-d, 0.2s);
+    transition: color 0.2s linear var(--c-d, 0.2s), background 0.3s linear var(--b-d, 0.2s);
+}
+
+.button:not(.simple):before, .button:not(.simple):after {
+    content: "";
+    position: absolute;
+    background: var(--pb, var(--hover-back));
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200%;
+    border-radius: var(--br, 40%);
+    -webkit-transform: translateY(var(--y, 50%));
+    transform: translateY(var(--y, 50%));
+    -webkit-transition: border-radius 0.5s ease var(--br-d, 0.08s), -webkit-transform var(--d, 0.4s) ease-in var(--d-d, 0s);
+    transition: border-radius 0.5s ease var(--br-d, 0.08s), -webkit-transform var(--d, 0.4s) ease-in var(--d-d, 0s);
+    transition: transform var(--d, 0.4s) ease-in var(--d-d, 0s), border-radius 0.5s ease var(--br-d, 0.08s);
+    transition: transform var(--d, 0.4s) ease-in var(--d-d, 0s), border-radius 0.5s ease var(--br-d, 0.08s), -webkit-transform var(--d, 0.4s) ease-in var(--d-d, 0s);
+}
+
+.button:not(.simple):after {
+    --pb: var(--hover-front);
+    --d: 0.44s;
+}
+
+.button div {
+    z-index: 1;
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+}
+
+.button div span {
+    display: block;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: var(--name, none) 0.7s linear forwards 0.18s;
+    animation: var(--name, none) 0.7s linear forwards 0.18s;
+}
+
+.button.in {
+    --name: move;
+}
+
+.button.in:not(.out) {
+    --c: var(--color-hover);
+    --b: var(--background-hover);
+}
+
+.button.in:not(.out):before, .button.in:not(.out):after {
+    --y: 0;
+    --br: 5%;
+}
+
+.button.in:not(.out):after {
+    --br: 10%;
+    --d-d: 0.02s;
+}
+
+.button.in.out {
+    --name: move-out;
+}
+
+.button.in.out:before {
+    --d-d: 0.06s;
+}
+
+@-webkit-keyframes move {
+    30%, 36% {
+        -webkit-transform: translateY(calc(-6px * var(--move))) translateZ(0) rotate(calc(-13deg * var(--rotate) * var(--part)));
+        transform: translateY(calc(-6px * var(--move))) translateZ(0) rotate(calc(-13deg * var(--rotate) * var(--part)));
+    }
+    50% {
+        -webkit-transform: translateY(calc(3px * var(--move))) translateZ(0) rotate(calc(6deg * var(--rotate) * var(--part)));
+        transform: translateY(calc(3px * var(--move))) translateZ(0) rotate(calc(6deg * var(--rotate) * var(--part)));
+    }
+    70% {
+        -webkit-transform: translateY(calc(-2px * var(--move))) translateZ(0) rotate(calc(-3deg * var(--rotate) * var(--part)));
+        transform: translateY(calc(-2px * var(--move))) translateZ(0) rotate(calc(-3deg * var(--rotate) * var(--part)));
+    }
+}
+
+@keyframes move {
+    30%, 36% {
+        -webkit-transform: translateY(calc(-6px * var(--move))) translateZ(0) rotate(calc(-13deg * var(--rotate) * var(--part)));
+        transform: translateY(calc(-6px * var(--move))) translateZ(0) rotate(calc(-13deg * var(--rotate) * var(--part)));
+    }
+    50% {
+        -webkit-transform: translateY(calc(3px * var(--move))) translateZ(0) rotate(calc(6deg * var(--rotate) * var(--part)));
+        transform: translateY(calc(3px * var(--move))) translateZ(0) rotate(calc(6deg * var(--rotate) * var(--part)));
+    }
+    70% {
+        -webkit-transform: translateY(calc(-2px * var(--move))) translateZ(0) rotate(calc(-3deg * var(--rotate) * var(--part)));
+        transform: translateY(calc(-2px * var(--move))) translateZ(0) rotate(calc(-3deg * var(--rotate) * var(--part)));
+    }
+}
+
+@-webkit-keyframes move-out {
+    30%, 36% {
+        -webkit-transform: translateY(calc(6px * var(--move))) translateZ(0) rotate(calc(13deg * var(--rotate) * var(--part)));
+        transform: translateY(calc(6px * var(--move))) translateZ(0) rotate(calc(13deg * var(--rotate) * var(--part)));
+    }
+    50% {
+        -webkit-transform: translateY(calc(-3px * var(--move))) translateZ(0) rotate(calc(-6deg * var(--rotate) * var(--part)));
+        transform: translateY(calc(-3px * var(--move))) translateZ(0) rotate(calc(-6deg * var(--rotate) * var(--part)));
+    }
+    70% {
+        -webkit-transform: translateY(calc(2px * var(--move))) translateZ(0) rotate(calc(3deg * var(--rotate) * var(--part)));
+        transform: translateY(calc(2px * var(--move))) translateZ(0) rotate(calc(3deg * var(--rotate) * var(--part)));
+    }
+}
+
+@keyframes move-out {
+    30%, 36% {
+        -webkit-transform: translateY(calc(6px * var(--move))) translateZ(0) rotate(calc(13deg * var(--rotate) * var(--part)));
+        transform: translateY(calc(6px * var(--move))) translateZ(0) rotate(calc(13deg * var(--rotate) * var(--part)));
+    }
+    50% {
+        -webkit-transform: translateY(calc(-3px * var(--move))) translateZ(0) rotate(calc(-6deg * var(--rotate) * var(--part)));
+        transform: translateY(calc(-3px * var(--move))) translateZ(0) rotate(calc(-6deg * var(--rotate) * var(--part)));
+    }
+    70% {
+        -webkit-transform: translateY(calc(2px * var(--move))) translateZ(0) rotate(calc(3deg * var(--rotate) * var(--part)));
+        transform: translateY(calc(2px * var(--move))) translateZ(0) rotate(calc(3deg * var(--rotate) * var(--part)));
+    }
+}
+
+/*--bOTONES  */
+
+/* asdasdasdasdadasdas */
+
+.buttonn {
+    --background: #362A89;
+    --text: #fff;
+    --cart: #fff;
+    --tick: var(--background);
+    position: relative;
+    border: none;
+    background: none;
+    padding: 8px 28px;
+    border-radius: 8px;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    min-width: 144px;
+    color: var(--text);
+    background: var(--background);
+    -webkit-transform: scale(var(--scale, 1));
+    transform: scale(var(--scale, 1));
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.36, 1.01, 0.32, 1.27);
+    transition: -webkit-transform 0.4s cubic-bezier(0.36, 1.01, 0.32, 1.27);
+    transition: transform 0.4s cubic-bezier(0.36, 1.01, 0.32, 1.27);
+    transition: transform 0.4s cubic-bezier(0.36, 1.01, 0.32, 1.27), -webkit-transform 0.4s cubic-bezier(0.36, 1.01, 0.32, 1.27);
+}
+
+.buttonn:active {
+    --scale: .95;
+}
+
+.buttonn span {
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    margin-left: -8px;
+    line-height: 26px;
+    -webkit-transform: translateY(var(--span-y, 0));
+    transform: translateY(var(--span-y, 0));
+    -webkit-transition: -webkit-transform .7s ease;
+    transition: -webkit-transform .7s ease;
+    transition: transform .7s ease;
+    transition: transform .7s ease, -webkit-transform .7s ease;
+}
+
+.buttonn span:before, .buttonn span:after {
+    content: '';
+    width: var(--w, 2px);
+    height: var(--h, 14px);
+    border-radius: 1px;
+    position: absolute;
+    left: var(--l, 8px);
+    top: var(--t, 6px);
+    background: currentColor;
+    -webkit-transform: scale(0.75) rotate(var(--icon-r, 0deg)) translateY(var(--icon-y, 0));
+    transform: scale(0.75) rotate(var(--icon-r, 0deg)) translateY(var(--icon-y, 0));
+    -webkit-transition: -webkit-transform .65s ease .05s;
+    transition: -webkit-transform .65s ease .05s;
+    transition: transform .65s ease .05s;
+    transition: transform .65s ease .05s, -webkit-transform .65s ease .05s;
+}
+
+.buttonn span:after {
+    --w: 14px;
+    --h: 2px;
+    --l: 2px;
+    --t: 12px;
+}
+
+.buttonn span {
+    background-color: transparent !important;
+}
+
+.buttonn:focus {
+    background-color: #362A89 !important;
+}
+
+.button:focus {
+    background-color: #362A89 !important;
+}
+
+.buttonn .cart {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -13px 0 0 -18px;
+    -webkit-transform-origin: 12px 23px;
+    transform-origin: 12px 23px;
+    -webkit-transform: translateX(-120px) rotate(-18deg);
+    transform: translateX(-120px) rotate(-18deg);
+}
+
+.buttonn .cart:before, .buttonn .cart:after {
+    content: '';
+    position: absolute;
+}
+
+.buttonn .cart:before {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 2px var(--cart);
+    bottom: 0;
+    left: 9px;
+    -webkit-filter: drop-shadow(11px 0 0 var(--cart));
+    filter: drop-shadow(11px 0 0 var(--cart));
+}
+
+.buttonn .cart:after {
+    width: 16px;
+    height: 9px;
+    background: var(--cart);
+    left: 9px;
+    bottom: 7px;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transform: perspective(4px) rotateX(-6deg) scaleY(var(--fill, 0));
+    transform: perspective(4px) rotateX(-6deg) scaleY(var(--fill, 0));
+    -webkit-transition: -webkit-transform 1.2s ease var(--fill-d);
+    transition: -webkit-transform 1.2s ease var(--fill-d);
+    transition: transform 1.2s ease var(--fill-d);
+    transition: transform 1.2s ease var(--fill-d), -webkit-transform 1.2s ease var(--fill-d);
+}
+
+.buttonn .cart svg {
+    z-index: 1;
+    width: 36px;
+    height: 26px;
+    display: block;
+    position: relative;
+    fill: none;
+    stroke: var(--cart);
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.buttonn .cart svg polyline:last-child {
+    stroke: var(--tick);
+    stroke-dasharray: 10px;
+    stroke-dashoffset: var(--offset, 10px);
+    -webkit-transition: stroke-dashoffset 0.4s ease var(--offset-d);
+    transition: stroke-dashoffset 0.4s ease var(--offset-d);
+}
+
+.buttonn.loading {
+    --scale: .95;
+    --span-y: -32px;
+    --icon-r: 180deg;
+    --fill: 1;
+    --fill-d: .8s;
+    --offset: 0;
+    --offset-d: 1.73s;
+}
+
+.buttonn.loading .cart {
+    -webkit-animation: cart 3.4s linear forwards .2s;
+    animation: cart 3.4s linear forwards .2s;
+}
+
+@-webkit-keyframes cart {
+    12.5% {
+        -webkit-transform: translateX(-60px) rotate(-18deg);
+        transform: translateX(-60px) rotate(-18deg);
+    }
+    25%, 45%, 55%, 75% {
+        -webkit-transform: none;
+        transform: none;
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    44%, 56% {
+        -webkit-transform-origin: 12px 23px;
+        transform-origin: 12px 23px;
+    }
+    45%, 55% {
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    87.5% {
+        -webkit-transform: translateX(70px) rotate(-18deg);
+        transform: translateX(70px) rotate(-18deg);
+    }
+    100% {
+        -webkit-transform: translateX(140px) rotate(-18deg);
+        transform: translateX(140px) rotate(-18deg);
+    }
+}
+
+@keyframes cart {
+    12.5% {
+        -webkit-transform: translateX(-60px) rotate(-18deg);
+        transform: translateX(-60px) rotate(-18deg);
+    }
+    25%, 45%, 55%, 75% {
+        -webkit-transform: none;
+        transform: none;
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    44%, 56% {
+        -webkit-transform-origin: 12px 23px;
+        transform-origin: 12px 23px;
+    }
+    45%, 55% {
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    87.5% {
+        -webkit-transform: translateX(70px) rotate(-18deg);
+        transform: translateX(70px) rotate(-18deg);
+    }
+    100% {
+        -webkit-transform: translateX(140px) rotate(-18deg);
+        transform: translateX(140px) rotate(-18deg);
+    }
+}
+
+.btn:hover, .btn-small:hover {
+    background-image: linear-gradient( 135deg, #FDD819 10%, #E80505 100%);
+}
